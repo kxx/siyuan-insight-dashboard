@@ -4,7 +4,6 @@ import Dashboard from "@/Dashboard.vue";
 import "@/index.scss";
 
 const TAB_TYPE = "siyuan_insight_dashboard_tab";
-const TAB_ID = "siyuan-insight-dashboard-main";
 
 export default class SiyuanDashboardPlugin extends Plugin {
   private dashboardApps = new Map<Element, VueApp>();
@@ -22,9 +21,14 @@ export default class SiyuanDashboardPlugin extends Plugin {
         const host = document.createElement("div");
         host.className = "sy-dashboard-root";
         this.element.appendChild(host);
-        const app = createApp(Dashboard, { siyuanApp: plugin.app });
-        app.mount(host);
-        plugin.dashboardApps.set(this.element, app);
+        try {
+          const app = createApp(Dashboard, { siyuanApp: plugin.app });
+          app.mount(host);
+          plugin.dashboardApps.set(this.element, app);
+        } catch (error) {
+          console.error("[siyuan-insight-dashboard] mount failed", error);
+          host.innerHTML = `<div style="padding:24px;color:var(--b3-card-error-color)">仪表盘加载失败，请打开开发者工具查看错误。</div>`;
+        }
       },
       destroy(this: Custom) {
         plugin.dashboardApps.get(this.element)?.unmount();
@@ -58,7 +62,7 @@ export default class SiyuanDashboardPlugin extends Plugin {
     openTab({
       app: this.app,
       custom: {
-        id: TAB_ID,
+        id: this.name + TAB_TYPE,
         icon: "iconDashboardHome",
         title: "仪表盘",
         data: { frontend },
