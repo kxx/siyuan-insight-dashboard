@@ -1,16 +1,16 @@
 {
-  "name": "siyuan-dashboard",
+  "name": "siyuan-insight-dashboard",
   "author": "kxx",
-  "url": "https://github.com/kxx/siyuan-dashboard",
+  "url": "https://github.com/kxx/siyuan-insight-dashboard",
   "version": "0.1.0",
   "minAppVersion": "3.6.0",
   "disabledInPublish": true,
   "backends": ["all"],
   "frontends": ["all"],
   "displayName": {
-    "default": "SiYuan Dashboard",
-    "en_US": "SiYuan Dashboard",
-    "zh_CN": "思源仪表盘"
+    "default": "SiYuan Insight Dashboard",
+    "en_US": "SiYuan Insight Dashboard",
+    "zh_CN": "思源洞察仪表盘"
   },
   "description": {
     "default": "A modular personal dashboard for SiYuan Note",

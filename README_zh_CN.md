@@ -1,4 +1,4 @@
-# 思源仪表盘
+# 思源洞察仪表盘
 
 一个原生风格的思源笔记个人仪表盘，提供笔记统计、年度进度、最近 365 天写作热力图和最近修改文档。
 
@@ -17,14 +17,14 @@
 ### 方式一：解压安装包
 
 1. 解压 `package.zip`，确认解压后的目录中直接包含 `plugin.json`、`index.js` 和 `index.css`。
-2. 将该目录命名为 `siyuan-dashboard`。
-3. 复制到思源工作空间的 `data/plugins/siyuan-dashboard`。
-4. 重启思源，在“设置 → 集市 → 已下载 → 插件”中启用“思源仪表盘”。
+2. 将该目录命名为 `siyuan-insight-dashboard`。
+3. 复制到思源工作空间的 `data/plugins/siyuan-insight-dashboard`。
+4. 重启思源，在“设置 → 集市 → 已下载 → 插件”中启用“思源洞察仪表盘”。
 
 Docker 部署时，目标路径是映射到容器 `/siyuan/workspace` 的宿主机工作空间目录下：
 
 ```text
-你的工作空间/data/plugins/siyuan-dashboard
+你的工作空间/data/plugins/siyuan-insight-dashboard
 ```
 
 ### 方式二：从源码构建

@@ -1,12 +1,12 @@
 {
-  "name": "siyuan-dashboard",
+  "name": "siyuan-insight-dashboard",
   "version": "0.1.0",
   "type": "module",
   "description": "A modular personal dashboard for SiYuan Note",
   "author": "kxx",
   "license": "MIT",
-  "homepage": "https://github.com/kxx/siyuan-dashboard",
-  "repository": "https://github.com/kxx/siyuan-dashboard.git",
+  "homepage": "https://github.com/kxx/siyuan-insight-dashboard",
+  "repository": "https://github.com/kxx/siyuan-insight-dashboard.git",
   "scripts": {
     "dev": "vite build --watch",
     "build": "vite build",

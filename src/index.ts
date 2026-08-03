@@ -3,8 +3,8 @@ import { Custom, Plugin, getFrontend, openTab } from "siyuan";
 import Dashboard from "@/Dashboard.vue";
 import "@/index.scss";
 
-const TAB_TYPE = "siyuan_dashboard_tab";
-const TAB_ID = "siyuan-dashboard-main";
+const TAB_TYPE = "siyuan_insight_dashboard_tab";
+const TAB_ID = "siyuan-insight-dashboard-main";
 
 export default class SiyuanDashboardPlugin extends Plugin {
   private dashboardApps = new Map<Element, VueApp>();

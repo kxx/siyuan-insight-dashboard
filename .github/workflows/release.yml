@@ -35,7 +35,7 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: siyuan-dashboard
+          name: siyuan-insight-dashboard
           path: package.zip
 
       - name: Publish GitHub release

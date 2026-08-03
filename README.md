@@ -1,4 +1,4 @@
-# SiYuan Dashboard / 思源仪表盘
+# SiYuan Insight Dashboard / 思源洞察仪表盘
 
 为思源笔记提供原生风格的个人仪表盘，包括笔记统计、年度进度、最近 365 天写作热力图和最近修改文档。
 
