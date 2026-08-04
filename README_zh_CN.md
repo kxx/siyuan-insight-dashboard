@@ -86,6 +86,7 @@ data/plugins/siyuan-insight-dashboard/
 ├── index.js
 ├── index.css
 ├── icon.png
+├── preview.png
 ├── README.md
 ├── README_zh_CN.md
 └── i18n/
