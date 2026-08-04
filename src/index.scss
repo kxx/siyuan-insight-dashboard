@@ -14,12 +14,18 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
   color: var(--b3-theme-on-background);
   background: var(--b3-theme-background);
 }
 
 .dashboard-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  flex: none;
   display: flex;
   align-items: center;
   min-height: 42px;
@@ -47,10 +53,11 @@
 @keyframes dash-spin { to { transform: rotate(360deg); } }
 
 .dashboard-content {
+  flex: none;
   width: min(900px, calc(100% - 40px));
   margin: 0 auto;
   padding: 24px 0 48px;
-  overflow: auto;
+  overflow: visible;
   box-sizing: border-box;
 }
 

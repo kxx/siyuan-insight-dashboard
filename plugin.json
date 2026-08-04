@@ -2,7 +2,7 @@
   "name": "siyuan-insight-dashboard",
   "author": "kxx",
   "url": "https://github.com/kxx/siyuan-insight-dashboard",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "minAppVersion": "3.6.0",
   "disabledInPublish": true,
   "backends": ["all"],
